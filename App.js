@@ -10,7 +10,7 @@ import { TracingStrategyProvider } from './app/TracingStrategyContext';
 import VersionCheckService from './app/services/VersionCheckService';
 import { store, persistor } from './app/store';
 import gpsStrategy from './app/gps';
-import BackgroundTaskService from './app/services/BackgroundTaskService';
+// import BackgroundTaskService from './app/services/BackgroundTaskService';
 
 // For snapshot testing. In tests, we provide a mock store wrapper if needed.
 export const UnconnectedApp = () => (
@@ -23,7 +23,7 @@ const App = () => {
   useEffect(() => {
     SplashScreen.hide();
     VersionCheckService.start();
-    BackgroundTaskService.start();
+    // BackgroundTaskService.start();
   }, []);
 
   return (

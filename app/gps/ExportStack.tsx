@@ -7,7 +7,7 @@ import ExportConfirmUpload from './Export/ExportConfirmUpload';
 import ExportIntro from './Export/ExportIntro';
 import ExportLocationConsent from './Export/ExportLocationConsent';
 import ExportPublishConsent from './Export/ExportPublishConsent';
-import ExportSelectHA from './Export/ExportSelectHA';
+// import ExportSelectHA from './Export/ExportSelectHA';
 
 import { Screens } from '../navigation';
 
@@ -19,9 +19,8 @@ const ExportStack = (): JSX.Element => (
       headerShown: false,
       gestureEnabled: false,
     }}
-    initialRouteName={Screens.ExportSelectHA}>
+    initialRouteName={Screens.ExportIntro}>
     <Stack.Screen name={Screens.ExportIntro} component={ExportIntro} />
-    <Stack.Screen name={Screens.ExportSelectHA} component={ExportSelectHA} />
     <Stack.Screen name={Screens.ExportCodeInput} component={ExportCodeInput} />
     <Stack.Screen
       name={Screens.ExportLocationConsent}

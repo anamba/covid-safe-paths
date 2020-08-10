@@ -7,11 +7,11 @@ import NotificationService from '../services/NotificationService';
 import { AllServicesOnScreen } from './main/AllServicesOn';
 import {
   TracingOffScreen,
-  NotificationsOffScreen,
+  // NotificationsOffScreen,
   SelectAuthorityScreen,
 } from './main/ServiceOffScreens';
 import PermissionsContext from '../gps/PermissionsContext';
-import { PermissionStatus } from '../permissionStatus';
+// import { PermissionStatus } from '../permissionStatus';
 
 import { useSelector, useDispatch } from 'react-redux';
 import selectedHealthcareAuthoritiesSelector from '../store/selectors/selectedHealthcareAuthoritiesSelector';
@@ -70,8 +70,8 @@ export const Main = () => {
 
   if (!canTrack) {
     return <TracingOffScreen />;
-  } else if (notification.status === PermissionStatus.DENIED) {
-    return <NotificationsOffScreen />;
+    // } else if (notification.status === PermissionStatus.DENIED) {
+    //   return <NotificationsOffScreen />;
   } else if (selectedAuthorities.length === 0) {
     if (autoSubscription.active) {
       return <AllServicesOnScreen navigation={navigation} />;

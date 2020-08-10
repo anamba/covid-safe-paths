@@ -29,8 +29,8 @@ import ImportScreen from './views/Import';
 import Welcome from './views/onboarding/Welcome';
 import PersonalPrivacy from './views/onboarding/PersonalPrivacy';
 import NotificationDetails from './views/onboarding/NotificationDetails';
-import ShareDiagnosis from './views/onboarding/ShareDiagnosis';
-import NotificationsPermissions from './views/onboarding/NotificationsPermissions';
+// import ShareDiagnosis from './views/onboarding/ShareDiagnosis';
+// import NotificationsPermissions from './views/onboarding/NotificationsPermissions';
 import LocationsPermissions from './views/onboarding/LocationsPermissions';
 import LanguageSelection from './views/LanguageSelection';
 import ReportIssueForm from './views/ReportIssueForm';
@@ -214,11 +214,11 @@ const OnboardingStack = () => (
       name={Screens.NotificationDetails}
       component={NotificationDetails}
     />
-    <Stack.Screen name={Screens.ShareDiagnosis} component={ShareDiagnosis} />
-    <Stack.Screen
+    {/* <Stack.Screen name={Screens.ShareDiagnosis} component={ShareDiagnosis} /> */}
+    {/* <Stack.Screen
       name={Screens.OnboardingNotificationPermissions}
       component={NotificationsPermissions}
-    />
+    /> */}
     <Stack.Screen
       name={Screens.OnboardingLocationPermissions}
       component={LocationsPermissions}
@@ -249,8 +249,8 @@ export const Entry = () => {
         {onboardingComplete ? (
           <Stack.Screen name={'App'} component={MainAppTabs} />
         ) : (
-          <Stack.Screen name={Stacks.Onboarding} component={OnboardingStack} />
-        )}
+            <Stack.Screen name={Stacks.Onboarding} component={OnboardingStack} />
+          )}
         {/* Modal Views: */}
         <Stack.Screen
           name={Screens.ExportFlow}

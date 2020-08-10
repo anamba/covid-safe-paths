@@ -25,7 +25,7 @@ const NotificationDetails = (): JSX.Element => {
   };
 
   const explanationScreenActions = {
-    primaryButtonOnPress: () => navigation.navigate(Screens.ShareDiagnosis),
+    primaryButtonOnPress: () => navigation.navigate(Screens.OnboardingLocationPermissions),
   };
 
   return (

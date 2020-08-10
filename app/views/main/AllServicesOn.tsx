@@ -85,11 +85,11 @@ export const AllServicesOnScreen = ({
           <Typography style={styles.subheaderText}>
             {t('home.gps.all_services_on_subheader')}
           </Typography>
-          {selectedAuthorities.length === 0 && (
+          {/* {selectedAuthorities.length === 0 && (
             <Typography style={styles.subheaderText}>
               {t('home.gps.all_services_on_no_ha_available')}
             </Typography>
-          )}
+          )} */}
         </View>
       </View>
 

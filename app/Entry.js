@@ -142,7 +142,7 @@ const MainAppTabs = () => {
           ),
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name={Stacks.ExposureHistory}
         component={ExposureHistoryStack}
         options={{
@@ -159,7 +159,7 @@ const MainAppTabs = () => {
             return userHasNewExposure ? applyBadge(tabIcon) : tabIcon;
           },
         }}
-      />
+      /> */}
       <Tab.Screen
         name={Screens.ExportStart}
         component={ExportStart}

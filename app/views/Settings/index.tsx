@@ -166,13 +166,13 @@ const SettingsScreen = ({ navigation }: SettingsScreenProps): JSX.Element => {
           />
         </View>
 
-        <View style={styles.section}>
+        {/* <View style={styles.section}>
           <SettingsListItem
             label={t('screen_titles.report_issue')}
             onPress={navigateTo(Screens.ReportIssue)}
             style={styles.lastListItem}
           />
-        </View>
+        </View> */}
 
         {enableFlags && (
           <View style={styles.section}>

@@ -17,7 +17,7 @@ export const ExportLocationConsent = ({ navigation, route }) => {
   const { selectedAuthority, code } = route.params;
 
   const onNext = () =>
-    navigation.navigate(Screens.ExportPublishConsent, {
+    navigation.navigate(Screens.ExportConfirmUpload, {
       selectedAuthority,
       code,
     });

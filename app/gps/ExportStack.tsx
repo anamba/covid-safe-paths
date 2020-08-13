@@ -6,7 +6,7 @@ import ExportComplete from './Export/ExportComplete';
 import ExportConfirmUpload from './Export/ExportConfirmUpload';
 import ExportIntro from './Export/ExportIntro';
 import ExportLocationConsent from './Export/ExportLocationConsent';
-import ExportPublishConsent from './Export/ExportPublishConsent';
+// import ExportPublishConsent from './Export/ExportPublishConsent';
 // import ExportSelectHA from './Export/ExportSelectHA';
 
 import { Screens } from '../navigation';
@@ -26,10 +26,10 @@ const ExportStack = (): JSX.Element => (
       name={Screens.ExportLocationConsent}
       component={ExportLocationConsent}
     />
-    <Stack.Screen
+    {/* <Stack.Screen
       name={Screens.ExportPublishConsent}
       component={ExportPublishConsent}
-    />
+    /> */}
     <Stack.Screen
       name={Screens.ExportConfirmUpload}
       component={ExportConfirmUpload}

@@ -140,7 +140,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "org.pathcheck.covidsafepaths"
+        applicationId "org.alohasafe.story"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         multiDexEnabled true

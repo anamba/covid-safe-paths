@@ -4,6 +4,7 @@ import { Alert, NativeModules } from 'react-native';
 
 import exitWarningAlert from './exitWarningAlert';
 import ExportTemplate from './ExportTemplate';
+import exportConsentApi from '../../api/export/exportConsentApi';
 import exportUploadApi from '../../api/export/exportUploadApi';
 import { Screens } from '../../navigation';
 import { Icons } from '../../assets';
@@ -28,6 +29,7 @@ export const ExportComplete = ({ navigation, route }) => {
     }
     setIsUploading(true);
     try {
+      await exportConsentApi(selectedAuthority, true, code);
       const concernPoints = await NativeModules.SecureStorageManager.getLocations();
       await exportUploadApi(selectedAuthority, concernPoints, code);
       navigation.navigate(Screens.ExportComplete);

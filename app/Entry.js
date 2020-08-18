@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
-import React, { useContext, useEffect } from 'react';
-import { View, StyleSheet } from 'react-native';
+import React from 'react';
+// import { View, StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useTranslation } from 'react-i18next';
 import { SvgXml } from 'react-native-svg';
@@ -21,8 +21,8 @@ import PartnersCustomUrlScreen from './views/Partners/PartnersCustomUrlScreen';
 import { LicensesScreen } from './views/Licenses';
 import { ExportStart, ExportLocally } from './gps/Export';
 
-import ExposureHistoryScreen from './views/ExposureHistory';
-import MoreInfo from './views/ExposureHistory/MoreInfo';
+// import ExposureHistoryScreen from './views/ExposureHistory';
+// import MoreInfo from './views/ExposureHistory/MoreInfo';
 import ImportFromUrl from './views/Settings/ImportFromUrl';
 import { FeatureFlagsScreen } from './views/FeatureFlagToggles';
 import ImportScreen from './views/Import';
@@ -37,13 +37,13 @@ import ReportIssueForm from './views/ReportIssueForm';
 
 import { Screens, Stacks } from './navigation';
 
-import ExposureHistoryContext from './ExposureHistoryContext';
+// import ExposureHistoryContext from './ExposureHistoryContext';
 import isOnboardingCompleteSelector from './store/selectors/isOnboardingCompleteSelector';
 import { isPlatformAndroid } from './Util';
 import { useTracingStrategyContext } from './TracingStrategyContext';
 
 import * as Icons from './assets/svgs/TabBarNav';
-import { Layout, Affordances, Spacing, Colors } from './styles';
+import { Layout, Spacing, Colors } from './styles';
 import ExportStack from './gps/ExportStack';
 
 const Tab = createBottomTabNavigator();
@@ -57,29 +57,29 @@ const SCREEN_OPTIONS = {
   headerShown: false,
 };
 
-const ExposureHistoryStack = ({ navigation }) => {
-  const { observeExposures } = useContext(ExposureHistoryContext);
-  useEffect(() => {
-    const unsubscribeTabPress = navigation.addListener('tabPress', () => {
-      observeExposures();
-    });
-    return unsubscribeTabPress;
-  }, [navigation, observeExposures]);
+// const ExposureHistoryStack = ({ navigation }) => {
+//   const { observeExposures } = useContext(ExposureHistoryContext);
+//   useEffect(() => {
+//     const unsubscribeTabPress = navigation.addListener('tabPress', () => {
+//       observeExposures();
+//     });
+//     return unsubscribeTabPress;
+//   }, [navigation, observeExposures]);
 
-  return (
-    <Stack.Navigator
-      mode='modal'
-      screenOptions={{
-        ...SCREEN_OPTIONS,
-      }}>
-      <Stack.Screen
-        name={Screens.ExposureHistory}
-        component={ExposureHistoryScreen}
-      />
-      <Stack.Screen name={Screens.MoreInfo} component={MoreInfo} />
-    </Stack.Navigator>
-  );
-};
+//   return (
+//     <Stack.Navigator
+//       mode='modal'
+//       screenOptions={{
+//         ...SCREEN_OPTIONS,
+//       }}>
+//       <Stack.Screen
+//         name={Screens.ExposureHistory}
+//         component={ExposureHistoryScreen}
+//       />
+//       <Stack.Screen name={Screens.MoreInfo} component={MoreInfo} />
+//     </Stack.Navigator>
+//   );
+// };
 
 const MoreTabStack = () => (
   <Stack.Navigator screenOptions={SCREEN_OPTIONS}>
@@ -96,23 +96,23 @@ const MoreTabStack = () => (
 
 const MainAppTabs = () => {
   const { t } = useTranslation();
-  const { userHasNewExposure } = useContext(ExposureHistoryContext);
+  // const { userHasNewExposure } = useContext(ExposureHistoryContext);
   const { homeScreenComponent } = useTracingStrategyContext();
 
-  const applyBadge = (icon) => {
-    return (
-      <>
-        {icon}
-        <View style={styles.iconBadge} />
-      </>
-    );
-  };
+  // const applyBadge = (icon) => {
+  //   return (
+  //     <>
+  //       {icon}
+  //       <View style={styles.iconBadge} />
+  //     </>
+  //   );
+  // };
 
-  const styles = StyleSheet.create({
-    iconBadge: {
-      ...Affordances.iconBadge,
-    },
-  });
+  // const styles = StyleSheet.create({
+  //   iconBadge: {
+  //     ...Affordances.iconBadge,
+  //   },
+  // });
 
   return (
     <Tab.Navigator
@@ -249,8 +249,8 @@ export const Entry = () => {
         {onboardingComplete ? (
           <Stack.Screen name={'App'} component={MainAppTabs} />
         ) : (
-            <Stack.Screen name={Stacks.Onboarding} component={OnboardingStack} />
-          )}
+          <Stack.Screen name={Stacks.Onboarding} component={OnboardingStack} />
+        )}
         {/* Modal Views: */}
         <Stack.Screen
           name={Screens.ExportFlow}

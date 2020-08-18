@@ -25,7 +25,8 @@ const NotificationDetails = (): JSX.Element => {
   };
 
   const explanationScreenActions = {
-    primaryButtonOnPress: () => navigation.navigate(Screens.OnboardingLocationPermissions),
+    primaryButtonOnPress: () =>
+      navigation.navigate(Screens.OnboardingLocationPermissions),
   };
 
   return (

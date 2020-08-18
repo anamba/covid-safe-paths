@@ -159,7 +159,7 @@ exports[`tracing off screen matches snapshot 1`] = `
             ]
           }
         >
-          PathCheck needs location access in Settings to privately save the places you visit
+          AlohaSafe Story needs location access in Settings to privately save the places you visit
         </Text>
         <TouchableOpacity
           accessibilityLabel="Allow Location Access"

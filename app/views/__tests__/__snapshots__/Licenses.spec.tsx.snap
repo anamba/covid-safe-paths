@@ -135,7 +135,7 @@ exports[`LicensesScreen renders correctly 1`] = `
             }
             testID="licenses-legal-header"
           >
-            PathCheck GPS
+            AlohaSafe Story
           </Text>
           <View
             style={

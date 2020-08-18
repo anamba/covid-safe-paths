@@ -146,7 +146,7 @@ exports[`all services on matches snapshot 1`] = `
             ]
           }
         >
-          PathCheck
+          AlohaSafe Story
         </Text>
         <Text
           style={
@@ -170,31 +170,7 @@ exports[`all services on matches snapshot 1`] = `
             ]
           }
         >
-          PathCheck is saving the places you visit to create your private location diary
-        </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "#2e2e2e",
-                "fontFamily": "IBMPlexSans",
-                "fontSize": 17,
-                "lineHeight": 24,
-              },
-              Object {
-                "writingDirection": "ltr",
-              },
-              Object {
-                "color": "#ffffff",
-                "fontSize": 18,
-                "lineHeight": 24.5,
-                "marginBottom": 24,
-                "textAlign": "center",
-              },
-            ]
-          }
-        >
-          You will not receive exposure notifications while you are outside a region served by Health Department partners
+          AlohaSafe Story is saving the places you visit to create your private location diary
         </Text>
       </View>
     </View>

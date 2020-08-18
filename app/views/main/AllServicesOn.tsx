@@ -30,7 +30,7 @@ export const AllServicesOnScreen = ({
   const size = Dimensions.get('window').height;
   const { t } = useTranslation();
 
-  const { autoSubscription, selectedAuthorities } = useSelector(
+  const { autoSubscription } = useSelector(
     (state: RootState) => state.healthcareAuthorities,
   );
 

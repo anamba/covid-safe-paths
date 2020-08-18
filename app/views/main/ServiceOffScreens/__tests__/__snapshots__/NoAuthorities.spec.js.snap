@@ -135,7 +135,7 @@ exports[`no authorities screen matches snapshot 1`] = `
             }
           }
         >
-          No local Health Department
+          Outside Coverage Area
         </Text>
         <Text
           style={
@@ -159,9 +159,7 @@ exports[`no authorities screen matches snapshot 1`] = `
             ]
           }
         >
-          Your phone is outside any areas covered by Health Department on PathCheck 
-
- You will be notified when Health Departments are added near you
+          Your phone is outside any areas covered by AlohaSafe Story
         </Text>
       </View>
     </View>

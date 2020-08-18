@@ -39,7 +39,7 @@ describe('LicensesScreen', () => {
       const { getByTestId } = renderTracingStrategyProvider(gpsStrategy);
 
       expect(getByTestId('licenses-legal-header')).toHaveTextContent(
-        'PathCheck GPS',
+        'AlohaSafe Story',
       );
     });
   });

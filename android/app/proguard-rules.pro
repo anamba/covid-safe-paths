@@ -10,7 +10,7 @@
 # Add any project specific keep options here:
 
 # react-native-config, prevents obfuscating of .env flags
--keep class org.pathcheck.covidsafepaths.BuildConfig { *; }
+-keep class org.alohasafe.story.BuildConfig { *; }
 
 -keep class androidx.core.app.CoreComponentFactory { *; }
 

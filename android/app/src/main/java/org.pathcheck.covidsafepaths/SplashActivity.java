@@ -1,4 +1,4 @@
-package org.pathcheck.covidsafepaths;
+package org.alohasafe.story;
 
 import android.content.Intent;
 import android.os.Bundle;

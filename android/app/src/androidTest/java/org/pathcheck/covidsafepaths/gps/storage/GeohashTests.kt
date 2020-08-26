@@ -1,4 +1,4 @@
-package org.pathcheck.covidsafepaths.gps.storage
+package org.alohasafe.story.gps.storage
 
 //
 //  GeohashTests.kt

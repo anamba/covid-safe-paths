@@ -1,4 +1,4 @@
-package org.pathcheck.covidsafepaths.gps.storage
+package org.alohasafe.story.gps.storage
 
 import com.facebook.react.bridge.ReadableArray
 import com.facebook.react.bridge.WritableMap

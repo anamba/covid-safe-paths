@@ -1,4 +1,4 @@
-package org.pathcheck.covidsafepaths.gps;
+package org.alohasafe.story.gps;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.filters.LargeTest;
@@ -9,7 +9,7 @@ import com.wix.detox.Detox;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.pathcheck.covidsafepaths.MainActivity;
+import org.alohasafe.story.MainActivity;
 
 @RunWith(AndroidJUnit4.class)
 @LargeTest

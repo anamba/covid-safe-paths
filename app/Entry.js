@@ -10,7 +10,7 @@ import {
   TransitionPresets,
   createStackNavigator,
 } from '@react-navigation/stack';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import SettingsScreen from './views/Settings';
 import AboutScreen from './views/About';
@@ -39,6 +39,15 @@ import { Screens, Stacks } from './navigation';
 
 // import ExposureHistoryContext from './ExposureHistoryContext';
 import isOnboardingCompleteSelector from './store/selectors/isOnboardingCompleteSelector';
+
+////// ALOHA SAFE STORY EDITS //////
+import getHealthcareAuthorities from './store/actions/healthcareAuthorities/getHealthcareAuthoritiesAction';
+import isHdohSelectedSelector from './store/selectors/isHdohSelectedSelector';
+import isAuthorityListLoadedSelector from './store/selectors/isAuthorityListLoadedSelector';
+import healthcareAuthorityOptionsSelector from './store/selectors/healthcareAuthorityOptionsSelector'
+import autoSelectHdohAction from './store/actions/healthcareAuthorities/autoSelectHdohAction'
+////// ALOHA SAFE STORY EDITS //////
+
 import { isPlatformAndroid } from './Util';
 import { useTracingStrategyContext } from './TracingStrategyContext';
 
@@ -243,6 +252,22 @@ const PartnersStack = () => (
 export const Entry = () => {
   const onboardingComplete = useSelector(isOnboardingCompleteSelector);
 
+  ////// ALOHA SAFE STORY EDITS //////
+  const authorityListLoaded = useSelector(isAuthorityListLoadedSelector)
+  const healthcareAuthorities = useSelector(healthcareAuthorityOptionsSelector)
+  const hdohSelected = useSelector(isHdohSelectedSelector);
+
+  const dispatch = useDispatch();
+  // Fetches and sets HAs from yaml on launch if it is not stored.
+  // WARNING: No special error handling in case of failure in this section. Handled through the action/reducer
+  if (!authorityListLoaded) {
+    dispatch(getHealthcareAuthorities());
+  }
+  // Sets to Hawaii Dept. of Health
+  if (!hdohSelected) {
+    dispatch(autoSelectHdohAction({healthcareAuthorities}));
+  }
+  ////// ALOHA SAFE STORY EDITS //////
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={SCREEN_OPTIONS}>

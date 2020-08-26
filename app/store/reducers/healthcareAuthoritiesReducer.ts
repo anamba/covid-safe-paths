@@ -10,6 +10,10 @@ import {
 import toggleSelectedHealthcareAuthorityAction from '../actions/healthcareAuthorities/toggleSelectedHealthcareAuthorityAction';
 import toggleAutoSubscriptionBannerAction from '../actions/healthcareAuthorities/toggleAutoSubscriptionBannerAction';
 
+////// ALOHA SAFE STORY EDITS //////
+import autoSelectHdohAction from '../actions/healthcareAuthorities/autoSelectHdohAction';
+////// ALOHA SAFE STORY EDITS //////
+
 type HealthCareReducerState = {
   // Because we control this list to be super small and have type safety, we use the full models
   // rather than a normalized map / id list paradigm.
@@ -77,6 +81,16 @@ const healthcareAuthoritiesReducer = createReducer(initialState, (builder) =>
       state.request.status = ApiStatus.FAILURE;
       state.request.errorMessage = error.message;
     })
+    ////// ALOHA SAFE STORY EDITS //////
+    .addCase(
+      autoSelectHdohAction,
+      (state, { payload: { healthcareAuthorities } }) => {
+        // Sets selected authorities array to the fetched authorities array. 
+        // CAUTION: Does not check against current state array. Assuming on one Hawaii Dept. of Health object.
+        state.selectedAuthorities = healthcareAuthorities
+      },
+    )
+    ////// ALOHA SAFE STORY EDITS //////
     .addCase(
       toggleSelectedHealthcareAuthorityAction,
       (

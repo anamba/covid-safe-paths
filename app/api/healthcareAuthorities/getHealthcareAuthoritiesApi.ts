@@ -1,5 +1,5 @@
 import Yaml from 'js-yaml';
-import env from 'react-native-config';
+// import env from 'react-native-config';
 import {
   HealthcareAuthority,
   ApiHealthcareAuthority,
@@ -28,7 +28,8 @@ const Response = Joi.object({
   authorities: HaList.required(),
 }).required();
 
-const { AUTHORITIES_YAML_ROUTE } = env;
+// const { AUTHORITIES_YAML_ROUTE } = env;
+const AUTHORITIES_YAML_ROUTE = 'https://api.alohasafe.org/ha.yaml';
 
 const getHealthcareAuthoritiesApi = async (
   yamlUrl: string = AUTHORITIES_YAML_ROUTE,

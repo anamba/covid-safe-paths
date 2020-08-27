@@ -6,8 +6,7 @@ type Payload = {
   // No custom URLs like toggleSelect action
 };
 
-const AUTO_SELECT_HDOH =
-  'AUTO_SELECT_HDOH';
+const AUTO_SELECT_HDOH = 'AUTO_SELECT_HDOH';
 
 const autoSelectHdohAction = createAction(
   AUTO_SELECT_HDOH,

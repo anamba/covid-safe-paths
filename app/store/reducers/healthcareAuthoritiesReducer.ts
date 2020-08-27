@@ -85,9 +85,9 @@ const healthcareAuthoritiesReducer = createReducer(initialState, (builder) =>
     .addCase(
       autoSelectHdohAction,
       (state, { payload: { healthcareAuthorities } }) => {
-        // Sets selected authorities array to the fetched authorities array. 
+        // Sets selected authorities array to the fetched authorities array.
         // CAUTION: Does not check against current state array. Assuming on one Hawaii Dept. of Health object.
-        state.selectedAuthorities = healthcareAuthorities
+        state.selectedAuthorities = healthcareAuthorities;
       },
     )
     ////// ALOHA SAFE STORY EDITS //////

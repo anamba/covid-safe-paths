@@ -44,8 +44,8 @@ import isOnboardingCompleteSelector from './store/selectors/isOnboardingComplete
 import getHealthcareAuthorities from './store/actions/healthcareAuthorities/getHealthcareAuthoritiesAction';
 import isHdohSelectedSelector from './store/selectors/isHdohSelectedSelector';
 import isAuthorityListLoadedSelector from './store/selectors/isAuthorityListLoadedSelector';
-import healthcareAuthorityOptionsSelector from './store/selectors/healthcareAuthorityOptionsSelector'
-import autoSelectHdohAction from './store/actions/healthcareAuthorities/autoSelectHdohAction'
+import healthcareAuthorityOptionsSelector from './store/selectors/healthcareAuthorityOptionsSelector';
+import autoSelectHdohAction from './store/actions/healthcareAuthorities/autoSelectHdohAction';
 ////// ALOHA SAFE STORY EDITS //////
 
 import { isPlatformAndroid } from './Util';
@@ -253,8 +253,8 @@ export const Entry = () => {
   const onboardingComplete = useSelector(isOnboardingCompleteSelector);
 
   ////// ALOHA SAFE STORY EDITS //////
-  const authorityListLoaded = useSelector(isAuthorityListLoadedSelector)
-  const healthcareAuthorities = useSelector(healthcareAuthorityOptionsSelector)
+  const authorityListLoaded = useSelector(isAuthorityListLoadedSelector);
+  const healthcareAuthorities = useSelector(healthcareAuthorityOptionsSelector);
   const hdohSelected = useSelector(isHdohSelectedSelector);
 
   const dispatch = useDispatch();
@@ -265,7 +265,7 @@ export const Entry = () => {
   }
   // Sets to Hawaii Dept. of Health
   if (!hdohSelected) {
-    dispatch(autoSelectHdohAction({healthcareAuthorities}));
+    dispatch(autoSelectHdohAction({ healthcareAuthorities }));
   }
   ////// ALOHA SAFE STORY EDITS //////
   return (

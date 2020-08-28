@@ -57,7 +57,7 @@ const LocationsPermissions = (): JSX.Element => {
 
   return (
     <ImageBackground
-      source={Images.BlueGradientBackground}
+      source={Images.OrangeToBlueGradientBackground}
       style={styles.backgroundImage}>
       <StatusBar
         barStyle='light-content'
@@ -122,11 +122,15 @@ const styles = StyleSheet.create({
   },
   headerText: {
     ...TypographyStyles.header2,
-    color: Colors.white,
+////// ALOHASAFE STORY EDITS //////
+    color: Colors.asDarkBlue,
+////// ALOHASAFE STORY EDITS //////
   },
   contentText: {
     ...TypographyStyles.mainContent,
-    color: Colors.white,
+////// ALOHASAFE STORY EDITS //////
+    color: Colors.asDarkBlue,
+////// ALOHASAFE STORY EDITS //////
   },
   enableButton: {
     ...Buttons.largeWhite,

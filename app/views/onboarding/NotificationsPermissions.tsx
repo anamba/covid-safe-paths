@@ -50,7 +50,9 @@ const NotificationsPermissions = (): JSX.Element => {
 
   return (
     <ImageBackground
-      source={Images.BlueGradientBackground}
+////// ALOHASAFE STORY EDITS //////
+      source={Images.OrangeToBlueGradientBackground}
+////// ALOHASAFE STORY EDITS //////
       style={styles.backgroundImage}>
       <View style={styles.container}>
         <ScrollView

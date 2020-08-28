@@ -37,7 +37,9 @@ export const ServiceOffScreen = ({
   return (
     <View style={{ flex: 1 }}>
       <ImageBackground
-        source={Images.BlueGradientBackground}
+////// ALOHASAFE STORY EDITS //////
+        source={Images.OrangeToBlueGradientBackground}
+////// ALOHASAFE STORY EDITS //////
         style={styles.backgroundImage}>
         <StatusBar
           barStyle='light-content'

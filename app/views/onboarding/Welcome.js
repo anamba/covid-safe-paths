@@ -27,7 +27,9 @@ const Welcome = ({ navigation }) => {
   const languageName = getLocalNames()[localeCode];
   return (
     <ImageBackground
-      source={Images.BlueGradientBackground}
+////// ALOHASAFE STORY EDITS //////
+      source={Images.OrangeToBlueGradientBackground}
+////// ALOHASAFE STORY EDITS //////
       style={styles.backgroundImage}>
       <ImageBackground
         source={Images.ConcentricCircles}
@@ -93,19 +95,25 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'center',
     lineHeight: 35,
-    color: Colors.white,
+////// ALOHASAFE STORY EDITS //////
+    color: Colors.asBaseOrange,
+////// ALOHASAFE STORY EDITS //////
     fontSize: 26,
   },
   languageSelector: {
     borderWidth: 1,
-    borderColor: Colors.white,
+////// ALOHASAFE STORY EDITS //////
+    borderColor: Colors.asDarkBlue,
+////// ALOHASAFE STORY EDITS //////
     paddingVertical: 4,
     paddingHorizontal: 11,
     borderRadius: 100,
   },
   languageSelectorText: {
     fontSize: 16,
-    color: Colors.white,
+////// ALOHASAFE STORY EDITS //////
+    color: Colors.asBrightBlue,
+////// ALOHASAFE STORY EDITS //////
     paddingVertical: 4,
     paddingHorizontal: 20,
     textAlign: 'center',

@@ -7,9 +7,9 @@
   "authorities": {
     "custom_url": "Manually Add Via URL",
     "custom_url_title": "Add Via Url",
-    "info_body": "The Hawaii State Department of Health can share information and resources about COVID-19 across the islands using the AlohaSafe Story app, including anonymized data that allows AlohaSafe Story to estimate when you may have crossed paths with the virus.",
+    "info_body": "The Hawaii State Department of Health can share information and resources about COVID-19 across the islands using the AlohaSafe Story app.",
     "invalid_url": "Invalid YAML URL",
-    "title": "Health Departments",
+    "title": "Health Department",
     "url_instructions": "Enter a URL for the Health Department you would like to add",
     "view_button_label": "View your Health Departments"
   },

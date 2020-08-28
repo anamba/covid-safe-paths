@@ -21,6 +21,9 @@ import StateNoContact from './stateNoContact';
 import StateUnknown from './stateUnknown';
 import Upload from './upload';
 
+////// ALOHASAFE STORY EDITS //////
+import ASLogoIcon from './asLogoIcon';
+////// ALOHASAFE STORY EDITS //////
 export const Icons = {
   AnonymizedData,
   AnonymizedDataInverted,
@@ -44,4 +47,5 @@ export const Icons = {
   StateNoContact,
   StateUnknown,
   Upload,
+  ASLogoIcon,
 };

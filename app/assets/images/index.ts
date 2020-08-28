@@ -10,7 +10,10 @@ const IsolatePathBackground = require('./isolatePathBackground.png');
 const MultipleCrossPathBackground = require('./multipleCrossPathBackground.png');
 const SingleCrossPathBackground = require('./singleCrossPathBackground.png');
 const CurveMask = require('./curveMask.png');
-
+////// ALOHASAFE STORY EDITS //////
+const BlueToOrangeGradientBackground = require('./blueToOrangeGradientBackground.png');
+const OrangeToBlueGradientBackground = require('./orangeToBlueGradientBackground.png');
+////// ALOHASAFE STORY EDITS //////
 export const Images = {
   BlueGradientBackground,
   BoxCheckedIcon,
@@ -24,4 +27,6 @@ export const Images = {
   MultipleCrossPathBackground,
   SingleCrossPathBackground,
   CurveMask,
+  BlueToOrangeGradientBackground,
+  OrangeToBlueGradientBackground,
 };

@@ -26,8 +26,8 @@ export const LicensesScreen = (): JSX.Element => {
     navigation.goBack();
   };
 
-  const infoAddress = 'info@pathcheck.org';
-  const pathCheckAddress = 'pathcheck.org';
+  const infoAddress = 'Contact Hawaii Department of Health';
+  const pathCheckAddress = 'health.hawaii.gov';
 
   const handleOnPressOpenUrl = (url: string) => {
     return () => Linking.openURL(url);
@@ -50,13 +50,15 @@ export const LicensesScreen = (): JSX.Element => {
             <View style={{ height: 20 }} />
             <Typography
               use='body2'
-              onPress={handleOnPressOpenUrl('mailto:info@pathcheck.org')}
+              onPress={handleOnPressOpenUrl(
+                'https://health.hawaii.gov/about/contact/',
+              )}
               style={styles.hyperlink}>
               {infoAddress}
             </Typography>
             <Typography
               use='body2'
-              onPress={handleOnPressOpenUrl('https://pathcheck.org/')}
+              onPress={handleOnPressOpenUrl('https://health.hawaii.gov/')}
               style={styles.hyperlink}>
               {pathCheckAddress}
             </Typography>

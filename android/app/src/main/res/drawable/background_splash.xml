@@ -18,10 +18,10 @@
 
     <!-- Text -->
     <item
-        android:width="300dp"
-        android:height="118dp"
+        android:width="220dp"
+        android:height="80dp"
         android:drawable="@drawable/as_story_logo_text"
         android:gravity="center"
-        android:top="450dp" />
+        android:top="318dp" />
 </layer-list>
 

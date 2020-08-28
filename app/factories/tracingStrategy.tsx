@@ -36,12 +36,12 @@ const HomeScreen = () => {
 const AffectedUserFlow = () => {
   return <View testID={'affected-user-flow'} />;
 };
-
+////// ALOHASAFE STORY EDITS //////
 export const testStrategyAssets: StrategyAssets = {
-  personalPrivacyBackground: Images.BlueGradientBackground,
+  personalPrivacyBackground: Images.OrangeToBlueGradientBackground,
   personalPrivacyIcon: '',
-  notificationDetailsBackground: Images.BlueGradientBackground,
+  notificationDetailsBackground: Images.OrangeToBlueGradientBackground,
   notificationDetailsIcon: '',
-  shareDiagnosisBackground: Images.BlueGradientBackground,
+  shareDiagnosisBackground: Images.OrangeToBlueGradientBackground,
   shareDiagnosisIcon: '',
 };

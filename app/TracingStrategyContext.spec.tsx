@@ -95,8 +95,9 @@ describe('TracingStrategyProvider', () => {
     });
 
     it('provides the correct strategy content', () => {
-      const expectedAsset = Images.BlueGradientBackground;
-
+////// ALOHASAFE STORY EDITS //////
+      const expectedAsset = Images.OrangeToBlueGradientBackground;
+////// ALOHASAFE STORY EDITS //////
       const strategy = factories.tracingStrategy.build({
         assets: {
           ...testStrategyAssets,
@@ -109,7 +110,9 @@ describe('TracingStrategyProvider', () => {
       const assets = getByTestId('tracing-strategy-assets');
 
       expect(assets).toHaveProp('source', {
-        testUri: '../../../app/assets/images/blueGradientBackground.png',
+////// ALOHASAFE STORY EDITS //////
+        testUri: '../../../app/assets/images/orangeToBlueGradientBackground.png',
+////// ALOHASAFE STORY EDITS //////
       });
     });
 

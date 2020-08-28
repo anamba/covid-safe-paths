@@ -28,5 +28,5 @@ export const Images = {
   SingleCrossPathBackground,
   CurveMask,
   BlueToOrangeGradientBackground,
-  OrangeToBlueGradientBackground
+  OrangeToBlueGradientBackground,
 };

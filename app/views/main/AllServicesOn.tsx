@@ -52,9 +52,9 @@ export const AllServicesOnScreen = ({
   return (
     <View style={{ flex: 1 }}>
       <ImageBackground
-////// ALOHASAFE STORY EDITS //////
+        ////// ALOHASAFE STORY EDITS //////
         source={Images.OrangeToBlueGradientBackground}
-////// ALOHASAFE STORY EDITS //////
+        ////// ALOHASAFE STORY EDITS //////
         style={styles.backgroundImage}>
         <StatusBar
           barStyle='light-content'
@@ -71,9 +71,9 @@ export const AllServicesOnScreen = ({
             duration={2000}
           />
           <SvgXml
-////// ALOHASAFE STORY EDITS //////
+            ////// ALOHASAFE STORY EDITS //////
             xml={Icons.ASLogoIcon}
-////// ALOHASAFE STORY EDITS //////
+            ////// ALOHASAFE STORY EDITS //////
             width={size ? size : 80}
             height={size ? size : 80}
           />

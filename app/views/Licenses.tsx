@@ -50,7 +50,9 @@ export const LicensesScreen = (): JSX.Element => {
             <View style={{ height: 20 }} />
             <Typography
               use='body2'
-              onPress={handleOnPressOpenUrl('https://health.hawaii.gov/about/contact/')}
+              onPress={handleOnPressOpenUrl(
+                'https://health.hawaii.gov/about/contact/',
+              )}
               style={styles.hyperlink}>
               {infoAddress}
             </Typography>

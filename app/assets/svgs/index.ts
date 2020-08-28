@@ -47,5 +47,5 @@ export const Icons = {
   StateNoContact,
   StateUnknown,
   Upload,
-  ASLogoIcon
+  ASLogoIcon,
 };

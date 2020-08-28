@@ -58,9 +58,9 @@ export const styles = StyleSheet.create({
   mainTextBelow: {
     textAlign: 'center',
     lineHeight: 34,
-////// ALOHASAFE STORY EDITS //////
+    ////// ALOHASAFE STORY EDITS //////
     color: Colors.asBaseOrange,
-////// ALOHASAFE STORY EDITS //////
+    ////// ALOHASAFE STORY EDITS //////
     fontSize: 26,
     marginBottom: 24,
   },
@@ -68,9 +68,9 @@ export const styles = StyleSheet.create({
     marginBottom: 24,
     textAlign: 'center',
     lineHeight: 24.5,
-////// ALOHASAFE STORY EDITS //////
+    ////// ALOHASAFE STORY EDITS //////
     color: Colors.asDarkBlue,
-////// ALOHASAFE STORY EDITS //////
+    ////// ALOHASAFE STORY EDITS //////
     fontSize: 18,
   },
   arrowContainer: {

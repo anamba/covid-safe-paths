@@ -122,15 +122,15 @@ const styles = StyleSheet.create({
   },
   headerText: {
     ...TypographyStyles.header2,
-////// ALOHASAFE STORY EDITS //////
+    ////// ALOHASAFE STORY EDITS //////
     color: Colors.asDarkBlue,
-////// ALOHASAFE STORY EDITS //////
+    ////// ALOHASAFE STORY EDITS //////
   },
   contentText: {
     ...TypographyStyles.mainContent,
-////// ALOHASAFE STORY EDITS //////
+    ////// ALOHASAFE STORY EDITS //////
     color: Colors.asDarkBlue,
-////// ALOHASAFE STORY EDITS //////
+    ////// ALOHASAFE STORY EDITS //////
   },
   enableButton: {
     ...Buttons.largeWhite,

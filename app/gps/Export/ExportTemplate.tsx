@@ -38,9 +38,9 @@ const BackgroundContainer = ({
     <LinearGradient
       start={{ x: 0, y: 0 }}
       end={{ x: 0, y: 1 }}
-////// ALOHASAFE STORY EDITS //////
+      ////// ALOHASAFE STORY EDITS //////
       colors={[Colors.asBaseOrange, Colors.white, Colors.asLightBlue]}
-////// ALOHASAFE STORY EDITS //////
+      ////// ALOHASAFE STORY EDITS //////
       style={styles.container}>
       {children}
     </LinearGradient>
@@ -158,9 +158,9 @@ export const ExportTemplate = ({
               <TouchableOpacity onPress={bodyLinkOnPress}>
                 <Typography
                   style={{
-////// ALOHASAFE STORY EDITS //////
+                    ////// ALOHASAFE STORY EDITS //////
                     color: Colors.asBrightBlue,
-////// ALOHASAFE STORY EDITS //////
+                    ////// ALOHASAFE STORY EDITS //////
                     textDecorationLine: 'underline',
                   }}
                   use='body1'>
@@ -218,15 +218,15 @@ const styles = StyleSheet.create({
   },
   exportSectionTitles: {
     ...TypographyStyles.header2,
-////// ALOHASAFE STORY EDITS //////
+    ////// ALOHASAFE STORY EDITS //////
     color: Colors.asDarkBlue,
-////// ALOHASAFE STORY EDITS //////
+    ////// ALOHASAFE STORY EDITS //////
   },
   contentText: {
     ...TypographyStyles.secondaryContent,
-////// ALOHASAFE STORY EDITS //////
+    ////// ALOHASAFE STORY EDITS //////
     color: Colors.asDarkBlue,
-////// ALOHASAFE STORY EDITS //////
+    ////// ALOHASAFE STORY EDITS //////
   },
 });
 

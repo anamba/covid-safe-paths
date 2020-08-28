@@ -7,13 +7,13 @@ const applyOpacity = (hexColor: string, opacity: number): string => {
 };
 ////// ALOHASAFE STORY EDITS //////
 // Aloha Safe Blues
-export const asBaseBlue = '#556682'
-export const asDarkBlue = '#1A4267'
-export const asBrightBlue = '#0C9BFF'
-export const asLightBlue = '#85A5FF'
+export const asBaseBlue = '#556682';
+export const asDarkBlue = '#1A4267';
+export const asBrightBlue = '#0C9BFF';
+export const asLightBlue = '#85A5FF';
 
 // Aloha Safe Oranges
-export const asBaseOrange = '#FF830E'
+export const asBaseOrange = '#FF830E';
 ////// ALOHASAFE STORY EDITS //////
 
 // Black and White

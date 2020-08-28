@@ -44,7 +44,7 @@
     "publish_consent_title": "Publish anonymized data",
     "select_ha_title": "Select your Health Department",
     "start_body": "Work with a representative from the Department of Health to remove personally-identifying information from your location history during your contact tracing interview.",
-    "start_title": "Share your anonymized location history with your community if you have tested positive for COVID-19."
+    "start_title": "Provide your anonymized location history to the secure Hawaii server once you have tested positive for COVID-19."
   },
   "exposure_datum": {
     "no_data": {
@@ -126,7 +126,7 @@
   },
   "label": {
     "about_header_location": "AlohaSafe Story",
-    "about_para": "AlohaSafe Story is based on the PathCheck app made available by the PathCheck Foundation, a non-profit organization that is committed to providing free software to help stop the spread of COVID-19 and protect the privacy of individuals. \n\nFor more information, visit",
+    "about_para": "AlohaSafe Story is supported by the Hawaii State Department of Health and developed on a platform created by the PathCheck Foundation, a non-profit organization committed to providing free software to help stop the spread of COVID-19 and protect the privacy of individuals. \n\nFor more information, visit",
     "authorities_no_sources": "No Health Departments",
     "bell_icon": "Bell icon",
     "close_icon": "Close icon",

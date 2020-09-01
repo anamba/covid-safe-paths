@@ -26,8 +26,8 @@ export const LicensesScreen = (): JSX.Element => {
     navigation.goBack();
   };
 
-  const infoAddress = 'Contact Hawaii Department of Health';
-  const pathCheckAddress = 'health.hawaii.gov';
+  const infoAddress = 'Contact Hawaii State Department of Health \n';
+  const pathCheckAddress = 'Hawaii State Department of Health Homepage';
 
   const handleOnPressOpenUrl = (url: string) => {
     return () => Linking.openURL(url);

@@ -55,7 +55,6 @@ import { isPlatformAndroid } from './Util';
 import { useTracingStrategyContext } from './TracingStrategyContext';
 
 import * as Icons from './assets/svgs/TabBarNav';
-import { UploadActive, UploadInactive } from './assets/svgs/upload';
 import { Layout, Spacing, Colors } from './styles';
 import ExportStack from './gps/ExportStack';
 

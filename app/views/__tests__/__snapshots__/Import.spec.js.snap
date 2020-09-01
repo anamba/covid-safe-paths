@@ -69,7 +69,7 @@ exports[`Import component renders correctly 1`] = `
               "writingDirection": "ltr",
             },
             Object {
-              "color": "#1A4267",
+              "color": "#ffffff",
               "fontFamily": "IBMPlexSans-Bold",
               "fontSize": 19,
               "fontWeight": "500",

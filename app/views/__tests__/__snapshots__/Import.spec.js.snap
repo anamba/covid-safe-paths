@@ -201,7 +201,7 @@ exports[`Import component renders correctly 1`] = `
                 "writingDirection": "ltr",
               },
               Object {
-                "color": "#1A4267",
+                "color": "#ffffff",
                 "fontSize": 19,
                 "fontWeight": "500",
               },
@@ -242,7 +242,7 @@ exports[`Import component renders correctly 1`] = `
                 "writingDirection": "ltr",
               },
               Object {
-                "color": "#1A4267",
+                "color": "#ffffff",
                 "fontSize": 19,
                 "fontWeight": "500",
               },

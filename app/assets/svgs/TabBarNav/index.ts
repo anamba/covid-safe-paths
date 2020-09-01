@@ -5,3 +5,4 @@ export { MoreActive, MoreInactive } from './More';
 export { ShieldActive, ShieldInactive } from './Shield';
 export { NotificationIcon } from './NotificationIcon';
 export { CalendarActive, CalendarInactive } from './Calendar';
+export { UploadActive, UploadInactive } from './UploadLocation';

@@ -14,9 +14,12 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import SettingsScreen from './views/Settings';
 import AboutScreen from './views/About';
-import PartnersOverviewScreen from './views/Partners/PartnersOverview';
-import PartnersEditScreen from './views/Partners/PartnersEdit';
-import PartnersCustomUrlScreen from './views/Partners/PartnersCustomUrlScreen';
+
+////// ALOHA SAFE STORY EDITS //////
+// import PartnersOverviewScreen from './views/Partners/PartnersOverview';
+// import PartnersEditScreen from './views/Partners/PartnersEdit';
+// import PartnersCustomUrlScreen from './views/Partners/PartnersCustomUrlScreen';
+////// ALOHA SAFE STORY EDITS //////
 
 import { LicensesScreen } from './views/Licenses';
 import { ExportStart, ExportLocally } from './gps/Export';
@@ -234,21 +237,23 @@ const OnboardingStack = () => (
     />
   </Stack.Navigator>
 );
+////// ALOHA SAFE STORY EDITS //////
 
-const PartnersStack = () => (
-  <Stack.Navigator screenOptions={SCREEN_OPTIONS}>
-    <Stack.Screen
-      name={Screens.PartnersOverview}
-      component={PartnersOverviewScreen}
-    />
-    <Stack.Screen name={Screens.PartnersEdit} component={PartnersEditScreen} />
-    <Stack.Screen
-      name={Screens.PartnersCustomUrl}
-      component={PartnersCustomUrlScreen}
-    />
-  </Stack.Navigator>
-);
+// const PartnersStack = () => (
+//   <Stack.Navigator screenOptions={SCREEN_OPTIONS}>
+//     <Stack.Screen
+//       name={Screens.PartnersOverview}
+//       component={PartnersOverviewScreen}
+//     />
+//     <Stack.Screen name={Screens.PartnersEdit} component={PartnersEditScreen} />
+//     <Stack.Screen
+//       name={Screens.PartnersCustomUrl}
+//       component={PartnersCustomUrlScreen}
+//     />
+//   </Stack.Navigator>
+// );
 
+////// ALOHA SAFE STORY EDITS //////
 export const Entry = () => {
   const onboardingComplete = useSelector(isOnboardingCompleteSelector);
 

@@ -183,7 +183,7 @@ const MainAppTabs = () => {
           ),
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name={Stacks.Partners}
         component={PartnersStack}
         options={{
@@ -196,7 +196,7 @@ const MainAppTabs = () => {
             />
           ),
         }}
-      />
+      /> */}
       <Tab.Screen
         name={Stacks.More}
         component={MoreTabStack}

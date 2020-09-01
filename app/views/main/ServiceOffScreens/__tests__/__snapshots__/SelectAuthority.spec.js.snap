@@ -33,7 +33,7 @@ exports[`select authority screen matches snapshot 1`] = `
       <Image
         source={
           Object {
-            "testUri": "../../../app/assets/images/blueGradientBackground.png",
+            "testUri": "../../../app/assets/images/orangeToBlueGradientBackground.png",
           }
         }
         style={
@@ -127,7 +127,7 @@ exports[`select authority screen matches snapshot 1`] = `
         <Text
           style={
             Object {
-              "color": "#ffffff",
+              "color": "#FF830E",
               "fontSize": 26,
               "lineHeight": 34,
               "marginBottom": 24,
@@ -150,7 +150,7 @@ exports[`select authority screen matches snapshot 1`] = `
                 "writingDirection": "ltr",
               },
               Object {
-                "color": "#ffffff",
+                "color": "#1A4267",
                 "fontSize": 18,
                 "lineHeight": 24.5,
                 "marginBottom": 24,

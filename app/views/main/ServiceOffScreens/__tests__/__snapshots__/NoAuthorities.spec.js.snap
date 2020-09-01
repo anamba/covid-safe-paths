@@ -33,7 +33,7 @@ exports[`no authorities screen matches snapshot 1`] = `
       <Image
         source={
           Object {
-            "testUri": "../../../app/assets/images/blueGradientBackground.png",
+            "testUri": "../../../app/assets/images/orangeToBlueGradientBackground.png",
           }
         }
         style={

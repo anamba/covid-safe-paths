@@ -161,10 +161,9 @@ exports[`LicensesScreen renders correctly 1`] = `
                 ]
               }
             >
-              PathCheck Foundation
-58 Day Street
-Box 441621
-Somerville, MA 02144
+              Hawaii State Department of Health
+1250 Punchbowl Street
+Honolulu, HI 96813
             </Text>
             <View
               style={
@@ -192,7 +191,7 @@ Somerville, MA 02144
                 ]
               }
             >
-              info@pathcheck.org
+              Contact Hawaii State Department of Health \n
             </Text>
             <Text
               style={
@@ -213,7 +212,7 @@ Somerville, MA 02144
                 ]
               }
             >
-              pathcheck.org
+              Hawaii State Department of Health Homepage
             </Text>
           </View>
         </View>

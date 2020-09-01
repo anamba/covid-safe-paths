@@ -55,6 +55,7 @@ import { isPlatformAndroid } from './Util';
 import { useTracingStrategyContext } from './TracingStrategyContext';
 
 import * as Icons from './assets/svgs/TabBarNav';
+import { UploadActive, UploadInactive } from './assets/svgs/upload';
 import { Layout, Spacing, Colors } from './styles';
 import ExportStack from './gps/ExportStack';
 
@@ -179,7 +180,7 @@ const MainAppTabs = () => {
           tabBarLabel: t('navigation.locations'),
           tabBarIcon: ({ focused, size }) => (
             <SvgXml
-              xml={focused ? Icons.LocationsActive : Icons.LocationsInactive}
+              xml={focused ? Icons.UploadActive : Icons.UploadInactive}
               width={size}
               height={size}
             />

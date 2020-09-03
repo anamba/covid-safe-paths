@@ -37,14 +37,14 @@
     "exit_warning_cancel": "Cancel",
     "exit_warning_confirm": "Yes, I'm sure",
     "exit_warning_title": "Are you sure?",
-    "location_consent_body": "Your location history is used by representatives of {{name}} to interview you about places you visited and when you were there.\n\nOnce you send your location history to {{name}}, they will retain your data for a specific period of time.",
+    "location_consent_body": "Your location history is used by representatives of {{name}} to interview you about places you visited and when you were there.\n\nIf you send your location history to {{name}}, they will retain your data for a specific period of time.",
     "location_consent_link": "Please view their privacy policy here.",
     "location_consent_title": "Use of location history",
     "publish_consent_body": "During the interview with {{name}} your interviewer can remove private locations, such as homes and apartments. They can also add any additional places you believe should be included.\n\n{{name}} may share the GPS coordinates from your location history, including date, time, and duration of your visits to let others in your community know if they may have crossed paths with the virus.\n\nI understand that the {{name}} representative will ask me verbally at the end of the interview if I consent.",
     "publish_consent_title": "Publish anonymized data",
     "select_ha_title": "Select your Health Department",
-    "start_body": "Call the Disease Reporting Line at: \n\n(808) 586-4586\n\nto work with a representative from the Department of Health to remove personally-identifying information from your location history.",
-    "start_title": "Provide your ANONYMIZED location history to the secure Hawaii server once you have tested POSITIVE for COVID-19."
+    "start_body": "Call the Department of Health at: \n(808) 586-4586\nto work with a representative.",
+    "start_title": "Provide your ANONYMIZED location history to the secure Hawaii server if you have tested POSITIVE for COVID-19."
   },
   "exposure_datum": {
     "no_data": {
@@ -81,7 +81,7 @@
     "gps": {
       "all_services_on_header": "AlohaSafe Story",
       "all_services_on_no_ha_available": "You will not receive exposure notifications while you are outside a region served by Health Department partners",
-      "all_services_on_subheader": "Mahalo for adding your phone to the fight against COVID-19!\n\nIf you have tested postive, please call the Disease Reporting Line at\n (808) 586-4586",
+      "all_services_on_subheader": "Mahalo for adding your device to the fight against COVID-19!\n\nThis data will help to make Hawaii's contact tracing process more accurate and efficient, should you ever be confirmed positive.\n\nAlohaSafe Story is saving the places you visit to create your private location diary.",
       "auto_start_header": "Auto Start Disabled",
       "auto_start_subheader": "AlohaSafe Story needs to be able to auto start to privately save the places you visit. Please enable it in your app settings",
       "auto_subscribe_link_text": "Click here to change.",

@@ -21,7 +21,10 @@ import { Screens } from '../../navigation';
 import { Icons } from '../../assets';
 import { Colors } from '../../styles';
 import { FeatureFlagOption } from '../../store/types';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+
+import getHealthcareAuthorities from '../../store/actions/healthcareAuthorities/getHealthcareAuthoritiesAction';
+import healthcareAuthorityOptionsSelector from '../../store/selectors/healthcareAuthorityOptionsSelector';
 
 const CODE_LENGTH = 6;
 
@@ -125,8 +128,15 @@ export const ExportSelectHA = ({ route, navigation }) => {
 
   const featureFlags = useSelector((state) => state.featureFlags?.flags || {});
   const bypassApi = !!featureFlags[FeatureFlagOption.BYPASS_EXPORT_API];
+  const dispatch = useDispatch();
 
-  const { selectedAuthority } = route.params;
+  // const { selectedAuthority } = route.params;
+  useEffect(() => {
+    dispatch(getHealthcareAuthorities());
+  }, [dispatch]);
+
+  const authorities = useSelector(healthcareAuthorityOptionsSelector);
+  const selectedAuthority = authorities[0];
 
   const navigateToNextScreen = () => {
     navigation.navigate(Screens.ExportLocationConsent, {

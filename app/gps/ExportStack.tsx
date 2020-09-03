@@ -19,7 +19,7 @@ const ExportStack = (): JSX.Element => (
       headerShown: false,
       gestureEnabled: false,
     }}
-    initialRouteName={Screens.ExportIntro}>
+    initialRouteName={Screens.ExportCodeInput}>
     <Stack.Screen name={Screens.ExportIntro} component={ExportIntro} />
     <Stack.Screen name={Screens.ExportCodeInput} component={ExportCodeInput} />
     <Stack.Screen

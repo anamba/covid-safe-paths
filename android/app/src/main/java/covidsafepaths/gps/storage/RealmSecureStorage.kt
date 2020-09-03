@@ -36,7 +36,7 @@ open class RealmSecureStorage(inMemory: Boolean?) {
     private const val MINIMUM_TIME_INTERVAL = 60000 * 4
     const val LOCATION_INTERVAL: Long = 60000 * 5
     private const val MAX_BACKFILL_TIME = 60000 * 60 * 24
-    private const val DAYS_TO_KEEP = 14
+    private const val DAYS_TO_KEEP = 21
     private const val SCHEMA_VERSION: Long = 1
 
     private const val MANUALLY_KEYED_PREF_FILE_NAME = "safepaths_enc_prefs"

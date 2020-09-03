@@ -81,7 +81,7 @@
     "gps": {
       "all_services_on_header": "AlohaSafe Story",
       "all_services_on_no_ha_available": "You will not receive exposure notifications while you are outside a region served by Health Department partners",
-      "all_services_on_subheader": "Mahalo for adding your device to the fight against COVID-19!\n\nThis data will help Hawaii's contact tracing process.\n\nAlohaSafe Story is saving the places you visit to create your private location diary.",
+      "all_services_on_subheader": "Mahalo for adding your device to the fight against COVID-19!\n\nAlohaSafe Story is saving the places you visit to create your private location diary.",
       "auto_start_header": "Auto Start Disabled",
       "auto_start_subheader": "AlohaSafe Story needs to be able to auto start to privately save the places you visit. Please enable it in your app settings",
       "auto_subscribe_link_text": "Click here to change.",

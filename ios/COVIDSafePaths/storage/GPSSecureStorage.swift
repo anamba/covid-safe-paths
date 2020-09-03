@@ -5,7 +5,7 @@ final class GPSSecureStorage: SafePathsSecureStorage {
 
   @objc static let shared = GPSSecureStorage()
 
-  static let DAYS_TO_KEEP: TimeInterval = 14
+  static let DAYS_TO_KEEP: TimeInterval = 21
   static let LOCATION_INTERVAL: TimeInterval = 60 * 5
 
   /// Hashing is very computationally expensive, so limit the number of hashes computed during a single backfill.

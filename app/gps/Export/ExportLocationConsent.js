@@ -1,10 +1,10 @@
 import React from 'react';
-import { Linking, Alert } from 'react-native';
+// import { Linking, Alert } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
 import exitWarningAlert from './exitWarningAlert';
 import ExportTemplate from './ExportTemplate';
-import getConfigurationApi from '../../api/healthcareAuthorities/getConfigurationApi';
+// import getConfigurationApi from '../../api/healthcareAuthorities/getConfigurationApi';
 import { Icons } from '../../assets';
 import { Screens } from '../../navigation';
 

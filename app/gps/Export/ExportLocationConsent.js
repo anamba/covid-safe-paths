@@ -25,19 +25,19 @@ export const ExportLocationConsent = ({ navigation, route }) => {
   const onClose = () => exitWarningAlert(navigation);
 
   // Fetch here to ensure we show the up to date privacy policy
-  const onPressLink = async () => {
-    try {
-      const { privacyPolicyUrl } = await getConfigurationApi(selectedAuthority);
-      try {
-        await Linking.openURL(privacyPolicyUrl);
-      } catch (e) {
-        // Isolate linking errors from api errors:
-        throw new Error(`Unable to open link: ${privacyPolicyUrl}`);
-      }
-    } catch (e) {
-      Alert.alert(t('common.something_went_wrong'), e.message);
-    }
-  };
+  // const onPressLink = async () => {
+  //   try {
+  //     const { privacyPolicyUrl } = await getConfigurationApi(selectedAuthority);
+  //     try {
+  //       await Linking.openURL(privacyPolicyUrl);
+  //     } catch (e) {
+  //       // Isolate linking errors from api errors:
+  //       throw new Error(`Unable to open link: ${privacyPolicyUrl}`);
+  //     }
+  //   } catch (e) {
+  //     Alert.alert(t('common.something_went_wrong'), e.message);
+  //   }
+  // };
 
   return (
     <ExportTemplate
@@ -47,8 +47,8 @@ export const ExportLocationConsent = ({ navigation, route }) => {
       buttonSubtitle={t('export.consent_button_subtitle')}
       headline={t('export.location_consent_title')}
       body={t('export.location_consent_body', { name: selectedAuthority.name })}
-      bodyLinkText={t('export.location_consent_link')}
-      bodyLinkOnPress={onPressLink}
+      // bodyLinkText={t('export.location_consent_link')}
+      // bodyLinkOnPress={onPressLink}
       icon={Icons.LocationPin}
     />
   );

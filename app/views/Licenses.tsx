@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   Image,
   Linking,
@@ -16,7 +16,10 @@ import { Typography } from '../components/Typography';
 import { Images } from '../assets';
 import { Colors, Spacing } from '../styles';
 
-const PRIVACY_POLICY_URL = 'https://pathcheck.org/privacy-policy/';
+import { useSelector } from 'react-redux';
+import getConfigurationApi from '../api/healthcareAuthorities/getConfigurationApi';
+
+import healthcareAuthorityOptionsSelector from '../store/selectors/healthcareAuthorityOptionsSelector';
 
 export const LicensesScreen = (): JSX.Element => {
   const { t } = useTranslation();
@@ -31,6 +34,19 @@ export const LicensesScreen = (): JSX.Element => {
 
   const handleOnPressOpenUrl = (url: string) => {
     return () => Linking.openURL(url);
+  };
+
+  let privacyPolicyUrl = '';
+  useEffect(() => {
+    getConfigurationApi(selectedAuthority).then(config => privacyPolicyUrl = config.privacyPolicyUrl);
+  });
+
+  const authorities = useSelector(healthcareAuthorityOptionsSelector);
+  const selectedAuthority = authorities[0];
+
+  // Fetch here to ensure we show the up to date privacy policy
+  const onPressLink = () => {
+    return () => Linking.openURL(privacyPolicyUrl);
   };
 
   return (
@@ -67,7 +83,7 @@ export const LicensesScreen = (): JSX.Element => {
       </ScrollView>
       <TouchableOpacity
         style={styles.termsInfoRow}
-        onPress={handleOnPressOpenUrl(PRIVACY_POLICY_URL)}>
+        onPress={onPressLink()}>
         <Typography style={{ color: Colors.white }} use='body1'>
           {t('label.privacy_policy')}
         </Typography>
